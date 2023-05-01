@@ -1,0 +1,47 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s; 
+}
+.modal.active{
+    opacity: 1;
+    pointer-events: all;
+
+}
+.modal-content{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    width: 380px;
+    height: 280px;
+    transform: scale(0.5);
+    transition: 0.4s all;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(80, 161, 116);
+
+}
+.modal-content.active{
+    transform: scale(1);
+}
+
+.titel-input {
+    margin-top: 5%;
+    height: 5vh;
+    border-radius: 12px;
+}
+
+.btn-input {
+    margin-top: 5%;
+    height: 5vh;
+    border-radius: 12px;
+}
